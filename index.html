@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#54217d">
+<meta name="description" content="فروشگاه اینترنتی زعفران دشت‌بیاض قائنات؛ مشاهده محصولات و ثبت سفارش از طریق ایتا">
+<link rel="manifest" href="./manifest.json">
+<title>زعفران دشت‌بیاض قائنات</title>
+<style>
+:root{--p:#54217d;--d:#35134f;--g:#e8b949;--bg:#fbf8fd;--ink:#281b30;--muted:#75697d;--line:#e9dff0}
+*{box-sizing:border-box}body{margin:0;font-family:Tahoma,Arial,sans-serif;background:var(--bg);color:var(--ink);line-height:1.8}
+.wrap{max-width:1000px;margin:auto;padding:0 14px}
+header{background:linear-gradient(130deg,var(--d),var(--p));color:#fff;padding:18px 0 24px}
+.brand{font-size:20px;font-weight:bold}.sub{font-size:13px;color:#f3dc9a}
+.hero{display:grid;grid-template-columns:1fr auto;gap:15px;align-items:center;margin-top:24px}
+h1{font-size:clamp(24px,5vw,36px);line-height:1.5;margin:0 0 8px}.hero p{margin:0 0 15px;color:#f1e7f8}
+.flower{font-size:74px;border:1px solid #ffffff35;border-radius:22px;padding:12px;background:#ffffff0d}
+button,.btn{border:0;border-radius:12px;background:var(--p);color:#fff;padding:11px 15px;font:inherit;font-weight:bold;text-decoration:none;cursor:pointer;display:inline-block}
+.gold{background:var(--g);color:#2d1835}.light{background:#f1e7f8;color:var(--p)}
+main{padding:20px 0 40px}.notice{background:#fff6dc;border:1px solid #f0d88c;border-radius:12px;padding:10px 13px;font-size:13px;margin-bottom:15px}
+.heading{display:flex;justify-content:space-between;align-items:center;gap:8px;flex-wrap:wrap}h2{font-size:21px;margin:12px 0}
+.grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}
+.card{background:white;border:1px solid var(--line);border-radius:17px;overflow:hidden}
+.visual{height:125px;display:grid;place-items:center;background:linear-gradient(135deg,#fff0cc,#f2e4f8);font-size:54px}
+.body{padding:13px}.body h3{margin:0;font-size:17px}.desc{font-size:13px;color:var(--muted);min-height:42px}.price{font-size:18px;font-weight:bold;color:var(--p);margin:8px 0}.unit{font-size:12px;font-weight:normal;color:var(--muted)}
+.controls{display:flex;gap:8px;align-items:center;margin:9px 0}.controls button{padding:5px 11px}.qty{min-width:20px;text-align:center}
+.panel{margin:18px 0;background:#fff;border:1px solid var(--line);border-radius:17px;padding:15px}
+input,textarea{width:100%;padding:11px;border:1px solid #d9cce1;border-radius:10px;font:inherit;margin:4px 0 10px}
+label{font-size:13px;font-weight:bold}.formgrid{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.line{display:flex;justify-content:space-between;gap:10px;border-bottom:1px solid var(--line);padding:8px 0}
+.total{font-size:18px;font-weight:bold;color:var(--p)}.small{font-size:12px;color:var(--muted)}
+footer{text-align:center;padding:22px 12px;background:#f1e8f7;color:var(--muted);font-size:13px}
+@media(max-width:650px){.grid{grid-template-columns:repeat(2,minmax(0,1fr))}.hero{grid-template-columns:1fr}.flower{display:none}}
+@media(max-width:410px){.grid{grid-template-columns:1fr}.visual{height:105px}.formgrid{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<header><div class="wrap">
+ <div class="brand">🌺 زعفران دشت‌بیاض قائنات</div><div class="sub">فروش مستقیم • سفارش جزئی و عمده</div>
+ <div class="hero"><div><h1>زعفران دشت‌بیاض، به خانه شما</h1><p>محصولات و قیمت‌ها را ببینید، تعداد را انتخاب کنید و سفارش خود را از طریق ایتا برای ما بفرستید.</p><button class="gold" onclick="document.getElementById('products').scrollIntoView({behavior:'smooth'})">مشاهده محصولات ↓</button></div><div class="flower">🌸</div></div>
+</div></header>
+<main class="wrap">
+ <div class="notice">فروشگاه نمونه است. قیمت‌ها و وزن‌های نمونه را پیش از انتشار ویرایش کنید. سفارش از طریق ایتا نهایی می‌شود؛ این سایت به‌تنهایی پرداخت آنلاین یا ثبت سفارش روی سرور ندارد.</div>
+ <div class="heading"><h2 id="products">محصولات ما</h2><span class="small">قیمت به تومان</span></div>
+ <div id="productGrid" class="grid"></div>
+ <section class="panel" id="cart"><h2>🛒 سبد خرید</h2><div id="cartLines"><p class="small">هنوز محصولی انتخاب نشده است.</p></div><div class="line"><span>جمع کالاها</span><span id="total" class="total">۰ تومان</span></div></section>
+ <section class="panel"><h2>مشخصات خریدار</h2>
+ <form id="checkout">
+  <div class="formgrid">
+   <div><label for="name">نام و نام خانوادگی *</label><input id="name" required placeholder="نام خریدار"></div>
+   <div><label for="phone">شماره تماس *</label><input id="phone" required inputmode="tel" placeholder="شماره تماس"></div>
+   <div><label for="city">شهر و استان</label><input id="city" placeholder="شهر محل تحویل"></div>
+   <div><label for="address">نشانی پستی</label><input id="address" placeholder="نشانی کامل"></div>
+  </div>
+  <label for="note">توضیحات سفارش</label><textarea id="note" rows="2" placeholder="مثلاً خرید عمده یا درخواست خاص"></textarea>
+  <button class="gold" type="submit">آماده‌کردن سفارش در ایتا</button>
+ </form>
+ <p class="small">با زدن دکمه، متن سفارش کپی می‌شود و صفحه تماس ایتا باز می‌شود. اگر کپی خودکار در مرورگر مجاز نباشد، متن سفارش روی صفحه نشان داده می‌شود تا دستی کپی کنید.</p>
+ <div id="result" class="notice" hidden></div>
+ </section>
+ <section class="panel"><h2>تماس و اعتماد</h2><p>برای پرسش درباره موجودی، خرید عمده و هزینه ارسال، از طریق ایتا با فروشنده هماهنگ کنید.</p><a class="btn" href="https://eitaa.com/Premium_Saffron" target="_blank" rel="noopener">بازکردن کانال ایتا</a><p class="small">برای دریافت مستقیم سفارش‌ها، نشانی ایتای شخصی یا ربات فروشنده را در فایل تنظیمات جایگزین کنید؛ لینک کانال به‌تنهایی صندوق دریافت سفارش نیست.</p></section>
+</main>
+<footer>زعفران دشت‌بیاض قائنات • فروشگاه آزمایشی قابل نصب روی گوشی</footer>
+<script src="./products.js"></script>
+<script>
+/* مهم: نشانی زیر را با لینک گفت‌وگوی ایتای فروشنده یا ربات سفارش جایگزین کنید.
+   لینک کانال عمومی معمولاً برای دریافت پیام خصوصی سفارش کافی نیست. */
+const EITAA_ORDER_URL = "https://eitaa.com/Premium_Saffron";
+let cart={};
+const fmt=n=>new Intl.NumberFormat('fa-IR').format(Number(n)||0);
+const money=n=>fmt(n)+' تومان';
+const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+function renderProducts(){document.getElementById('productGrid').innerHTML=PRODUCTS.map(p=>`<article class="card"><div class="visual">${esc(p.emoji||'🌺')}</div><div class="body"><h3>${esc(p.name)}</h3><div class="small">${esc(p.weight||'')}</div><div class="desc">${esc(p.description||'')}</div><div class="price">${money(p.price)}</div><div class="small">موجودی: ${fmt(p.stock)} بسته</div><div class="controls"><button class="light" onclick="change(${p.id},-1)">−</button><span class="qty">${fmt(cart[p.id]||0)}</span><button onclick="change(${p.id},1)" ${p.stock<=0?'disabled':''}>+</button></div></div></article>`).join('')}
+function change(id,d){let p=PRODUCTS.find(x=>x.id===id);let next=(cart[id]||0)+d;if(next<0)next=0;if(next>p.stock){alert('موجودی کافی نیست.');return}cart[id]=next;renderProducts();renderCart()}
+function renderCart(){let items=PRODUCTS.filter(p=>(cart[p.id]||0)>0);let total=items.reduce((s,p)=>s+p.price*cart[p.id],0);document.getElementById('cartLines').innerHTML=items.map(p=>`<div class="line"><span>${esc(p.name)} (${esc(p.weight)}) × ${fmt(cart[p.id])}</span><strong>${money(p.price*cart[p.id])}</strong></div>`).join('')||'<p class="small">هنوز محصولی انتخاب نشده است.</p>';document.getElementById('total').textContent=money(total)}
+document.getElementById('checkout').addEventListener('submit',async e=>{e.preventDefault();let items=PRODUCTS.filter(p=>(cart[p.id]||0)>0);if(!items.length){alert('ابتدا محصولی انتخاب کنید.');return}let total=items.reduce((s,p)=>s+p.price*cart[p.id],0);let message='سلام، برای خرید زعفران سفارش دارم.%0A';message='سلام، برای خرید زعفران سفارش دارم.\\n'+items.map(p=>`- ${p.name}، ${p.weight}، تعداد ${cart[p.id]}، مبلغ ${money(p.price*cart[p.id])}`).join('\\n')+`\\nجمع کالاها: ${money(total)}\\nنام: ${document.getElementById('name').value}\\nتلفن: ${document.getElementById('phone').value}\\nشهر: ${document.getElementById('city').value}\\nنشانی: ${document.getElementById('address').value}\\nتوضیحات: ${document.getElementById('note').value}\\nلطفاً هزینه ارسال و موجودی نهایی را تأیید کنید.`;let result=document.getElementById('result');result.hidden=false;result.innerHTML='<strong>متن سفارش آماده است.</strong><textarea id="orderText" rows="8"></textarea><button onclick="copyOrder()">کپی متن سفارش</button> <button class="light" onclick="openEitaa()">بازکردن ایتا</button><p class="small">پس از بازشدن ایتا، متن را در گفت‌وگوی فروشنده ارسال کنید.</p>';document.getElementById('orderText').value=message;try{await navigator.clipboard.writeText(message);result.querySelector('strong').textContent='متن سفارش کپی شد؛ حالا ایتا را باز کنید.'}catch(err){}});
+async function copyOrder(){let t=document.getElementById('orderText');t.select();try{await navigator.clipboard.writeText(t.value);alert('متن سفارش کپی شد.')}catch(e){alert('متن را انتخاب و کپی کنید.')}}function openEitaa(){window.open(EITAA_ORDER_URL,'_blank','noopener')}
+renderProducts();renderCart();
+if('serviceWorker' in navigator && location.protocol.startsWith('http')) navigator.serviceWorker.register('./sw.js').catch(()=>{});
+</script>
+</body></html>
