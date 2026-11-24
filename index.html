@@ -2,384 +2,323 @@
 <!DOCTYPE html>
 <html lang="fa" dir="rtl">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="theme-color" content="#174d32">
-  <meta name="description" content="خرید زعفران قائنات (روستای دشت بیاض)، زعفران سرگل و دسته دخترپیچ با امکان سفارش از طریق ایتا.">
-  <title>زعفران قائنات (روستای دشت بیاض)</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#174d32">
+<meta name="description" content="فروش زعفران قائنات (روستای دشت بیاض)">
+<title>زعفران قائنات (روستای دشت بیاض)</title>
 
-  <style>
-    * { box-sizing: border-box; }
-
-    body {
-      margin: 0;
-      font-family: Tahoma, Arial, sans-serif;
-      background: #faf8f1;
-      color: #292d27;
-      line-height: 1.9;
-    }
-
-    header {
-      background: linear-gradient(135deg, #103b27, #267044);
-      color: white;
-      padding: 34px 16px;
-      text-align: center;
-    }
-
-    .logo {
-      font-size: 42px;
-      margin-bottom: 4px;
-    }
-
-    header h1 {
-      font-size: clamp(23px, 5vw, 34px);
-      margin: 0;
-    }
-
-    header p {
-      margin: 8px 0 0;
-      color: #f3e7bd;
-    }
-
-    main {
-      width: min(920px, 100%);
-      margin: auto;
-      padding: 20px 14px 36px;
-    }
-
-    .intro, .product, .order, .notice {
-      background: white;
-      border: 1px solid #e9e3d3;
-      border-radius: 16px;
-      padding: 20px;
-      margin-bottom: 18px;
-      box-shadow: 0 4px 14px #26351b0a;
-    }
-
-    h2 {
-      color: #174d32;
-      font-size: 21px;
-      margin-top: 0;
-    }
-
-    .products {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
-      gap: 16px;
-    }
-
-    .product {
-      margin-bottom: 0;
-      text-align: center;
-    }
-
-    .product .emoji {
-      font-size: 45px;
-    }
-
-    .product h3 {
-      color: #174d32;
-      margin: 5px 0;
-    }
-
-    .price {
-      font-weight: bold;
-      color: #946b14;
-      font-size: 19px;
-    }
-
-    .muted {
-      color: #6c7169;
-      font-size: 13px;
-    }
-
-    label {
-      display: block;
-      font-weight: bold;
-      margin: 14px 0 5px;
-    }
-
-    select {
-      display: block;
-      width: 100%;
-      padding: 13px;
-      border: 1px solid #d8d7cc;
-      border-radius: 10px;
-      font-family: inherit;
-      font-size: 16px;
-      background: white;
-      color: #222;
-    }
-
-    .total {
-      background: #f4f5e9;
-      border-radius: 12px;
-      padding: 14px;
-      margin-top: 18px;
-      text-align: center;
-    }
-
-    .total strong {
-      display: block;
-      color: #174d32;
-      font-size: 25px;
-    }
-
-    button, .link-button {
-      display: block;
-      width: 100%;
-      border: 0;
-      border-radius: 11px;
-      padding: 13px 16px;
-      margin-top: 12px;
-      font-family: inherit;
-      font-size: 16px;
-      font-weight: bold;
-      text-align: center;
-      text-decoration: none;
-      cursor: pointer;
-    }
-
-    .primary {
-      background: #17683b;
-      color: white;
-    }
-
-    .secondary {
-      background: #f0ead8;
-      color: #174d32;
-    }
-
-    .notice {
-      background: #fffdf6;
-      font-size: 14px;
-    }
-
-    #orderText {
-      width: 100%;
-      min-height: 145px;
-      margin-top: 12px;
-      padding: 12px;
-      border: 1px solid #ddd5c4;
-      border-radius: 10px;
-      font-family: inherit;
-      font-size: 14px;
-      line-height: 1.9;
-      resize: vertical;
-    }
-
-    #status {
-      color: #17683b;
-      font-size: 14px;
-      margin-top: 8px;
-    }
-
-    footer {
-      text-align: center;
-      background: #103b27;
-      color: #fff;
-      padding: 22px 14px;
-      font-size: 13px;
-    }
-
-    footer a {
-      color: #f3e7bd;
-      text-decoration: none;
-    }
-  </style>
+<style>
+*{box-sizing:border-box}
+body{margin:0;font-family:Tahoma,Arial,sans-serif;background:#faf8f1;color:#292d27;line-height:1.9}
+header{background:linear-gradient(135deg,#103b27,#267044);color:white;text-align:center;padding:30px 15px}
+header h1{margin:0;font-size:28px}
+header p{color:#f3e7bd;margin:5px}
+main{max-width:850px;margin:auto;padding:18px 12px}
+.panel,.product{background:white;border:1px solid #e9e3d3;border-radius:15px;padding:17px;margin-bottom:16px}
+h2,h3{color:#174d32}
+.products{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px}
+.product{text-align:center}
+.price{font-size:18px;color:#946b14;font-weight:bold}
+label{display:block;font-weight:bold;margin:12px 0 5px}
+select{width:100%;padding:12px;border:1px solid #ccc;border-radius:9px;font:inherit;background:white}
+button,.btn{display:block;width:100%;padding:12px;margin-top:10px;border:0;border-radius:10px;font:inherit;font-weight:bold;text-align:center;cursor:pointer;text-decoration:none}
+.primary{background:#17683b;color:white}
+.secondary{background:#f0ead8;color:#174d32}
+.danger{background:#fff0ed;color:#a33122}
+.cart-item{background:#fff;border:1px solid #e9e3d3;border-radius:10px;padding:12px;margin:10px 0}
+.cart-item h3{margin:0;font-size:16px}
+.cart-item p{margin:4px 0}
+.total{background:#f1f4e8;border-radius:10px;padding:14px;text-align:center;margin-top:15px}
+.total strong{display:block;color:#174d32;font-size:23px}
+#orderText{width:100%;min-height:230px;padding:12px;margin-top:10px;border:1px solid #ccc;border-radius:10px;font:14px/2 Tahoma,Arial,sans-serif}
+.muted{font-size:13px;color:#777}
+#status{font-size:14px;color:#17683b}
+.notice{background:#fffdf6;font-size:14px}
+footer{text-align:center;background:#103b27;color:white;padding:20px 12px;font-size:13px}
+footer a{color:#f3e7bd}
+</style>
 </head>
 
 <body>
-
 <header>
-  <div class="logo" aria-hidden="true">🌺</div>
+  <div style="font-size:40px">🌺</div>
   <h1>زعفران قائنات</h1>
   <p>(روستای دشت بیاض)</p>
   <p>عطر اصالت، طعم کیفیت</p>
 </header>
 
 <main>
-  <section class="intro">
-    <h2>به فروشگاه ما خوش آمدید</h2>
-    <p>
-      برای مشاهده قیمت‌ها و سفارش زعفران، محصول و وزن دلخواهتان
-      را انتخاب کنید. سفارش‌ها از طریق حساب ایتا دریافت می‌شوند.
-    </p>
-  </section>
+<section class="panel">
+  <h2>به فروشگاه ما خوش آمدید</h2>
+  زعفران موردنظر خود را انتخاب کنید، به سبد خرید اضافه کنید و سفارش خود را از طریق ایتا پیگیری کنید.
+</section>
 
-  <h2>محصولات ما</h2>
+<h2>محصولات ما</h2>
+<section class="products">
+  <article class="product">
+    <div style="font-size:38px">🌸</div>
+    <h3>زعفران دسته دخترپیچ</h3>
+    <div class="price">۱٬۱۹۰٬۰۰۰ تومان</div>
+    <p class="muted">قیمت هر مثقال؛ هر مثقال ۴٫۶۰۸ گرم</p>
+  </article>
+  <article class="product">
+    <div style="font-size:38px">🌺</div>
+    <h3>زعفران سرگل</h3>
+    <div class="price">۱٬۴۹۰٬۰۰۰ تومان</div>
+    <p class="muted">قیمت هر مثقال؛ هر مثقال ۴٫۶۰۸ گرم</p>
+  </article>
+</section>
 
-  <section class="products">
-    <article class="product">
-      <div class="emoji" aria-hidden="true">🌸</div>
-      <h3>زعفران دسته دخترپیچ</h3>
-      <p>قیمت هر مثقال</p>
-      <div class="price">۱٬۱۹۰٬۰۰۰ تومان</div>
-      <p class="muted">هر مثقال معادل ۴٫۶۰۸ گرم</p>
-    </article>
+<section class="panel" style="margin-top:18px">
+  <h2>افزودن به سبد خرید</h2>
 
-    <article class="product">
-      <div class="emoji" aria-hidden="true">🌺</div>
-      <h3>زعفران سرگل</h3>
-      <p>قیمت هر مثقال</p>
-      <div class="price">۱٬۴۹۰٬۰۰۰ تومان</div>
-      <p class="muted">هر مثقال معادل ۴٫۶۰۸ گرم</p>
-    </article>
-  </section>
+  <label for="product">نوع زعفران</label>
+  <select id="product">
+    <option value="sargol">زعفران سرگل</option>
+    <option value="dokhtar">زعفران دسته دخترپیچ</option>
+  </select>
 
-  <section class="order" style="margin-top:18px">
-    <h2>ثبت سفارش</h2>
+  <label for="weight">وزن هر بسته</label>
+  <select id="weight">
+    <option value="1">۱ مثقال</option>
+    <option value="2">۲ مثقال</option>
+    <option value="3">۳ مثقال</option>
+    <option value="5">۵ مثقال</option>
+  </select>
 
-    <label for="product">۱. انتخاب نوع زعفران</label>
-    <select id="product">
-      <option value="dokhtar">زعفران دسته دخترپیچ</option>
-      <option value="sargol">زعفران سرگل</option>
-    </select>
+  <label for="quantity">تعداد بسته</label>
+  <select id="quantity">
+    <option value="1">۱ بسته</option>
+    <option value="2">۲ بسته</option>
+    <option value="3">۳ بسته</option>
+    <option value="4">۴ بسته</option>
+    <option value="5">۵ بسته</option>
+    <option value="6">۶ بسته</option>
+    <option value="7">۷ بسته</option>
+    <option value="8">۸ بسته</option>
+    <option value="9">۹ بسته</option>
+    <option value="10">۱۰ بسته</option>
+  </select>
 
-    <label for="weight">۲. انتخاب وزن بسته</label>
-    <select id="weight">
-      <option value="1">۱ مثقال</option>
-      <option value="2">۲ مثقال</option>
-      <option value="3">۳ مثقال</option>
-      <option value="5">۵ مثقال</option>
-    </select>
+  <button class="primary" id="addBtn">افزودن به سبد خرید</button>
+</section>
 
-    <div class="total">
-      مبلغ نهایی سفارش
-      <strong id="total">۱٬۱۹۰٬۰۰۰ تومان</strong>
-      <span class="muted" id="grams">وزن تقریبی: ۴٫۶۰۸ گرم</span>
-    </div>
+<section class="panel">
+  <h2>سبد خرید شما</h2>
+  <div id="cart"><p class="muted">هنوز محصولی انتخاب نشده است.</p></div>
 
-    <button class="primary" id="orderBtn" type="button">
-      ادامه سفارش در ایتا
-    </button>
+  <div class="total">
+    مبلغ کل محصولات
+    <strong id="total">۰ تومان</strong>
+    <span class="muted" id="totalWeight">وزن کل: ۰ گرم</span>
+  </div>
 
-    <a class="link-button secondary"
-       href="https://eitaa.com/Premium_Saffron_qaenat"
-       target="_blank" rel="noopener noreferrer">
-      مشاهده حساب فروشنده در ایتا
-    </a>
+  <button class="primary" id="checkoutBtn" disabled>
+    ثبت نهایی سفارش و ادامه در ایتا
+  </button>
 
-    <label for="orderText">متن سفارش شما</label>
-    <textarea id="orderText" readonly></textarea>
+  <label for="orderText">متن آماده سفارش</label>
+  <textarea id="orderText" readonly placeholder="ابتدا محصولات را به سبد خرید اضافه کنید."></textarea>
+  <button class="secondary" id="copyBtn">کپی متن سفارش</button>
+  <p id="status" role="status" aria-live="polite">سفارش شما پس از انتخاب محصولات آماده می‌شود.</p>
+</section>
 
-    <button class="secondary" id="copyBtn" type="button">
-      کپی متن سفارش
-    </button>
-
-    <p id="status" role="status" aria-live="polite">
-      پس از انتخاب محصول و وزن، متن سفارش آماده می‌شود.
-    </p>
-  </section>
-
-  <section class="notice">
-    <strong>توجه:</strong>
-    پس از ورود به ایتا، متن سفارش را در گفت‌وگوی فروشنده ارسال کنید.
-    ثبت سفارش زمانی نهایی می‌شود که فروشنده آن را تأیید کند.
-    هزینه و روش ارسال نیز باید با فروشنده هماهنگ شود.
-  </section>
+<section class="panel notice">
+  <strong>راهنمای سفارش:</strong>
+  پس از بازشدن ایتا، اگر متن سفارش خودکار داخل کادر پیام قرار نگرفت،
+  متن آماده را کپی کنید، در گفت‌وگوی فروشنده جای‌گذاری کنید و دکمه ارسال را بزنید.
+  سفارش پس از تأیید فروشنده نهایی خواهد شد.
+</section>
 </main>
 
 <footer>
-  <p><strong>زعفران قائنات (روستای دشت بیاض)</strong></p>
+  <strong>زعفران قائنات (روستای دشت بیاض)</strong>
   <p>برای سفارش و هماهنگی از طریق ایتا با ما در ارتباط باشید.</p>
-  <a href="https://eitaa.com/Premium_Saffron_qaenat"
-     target="_blank" rel="noopener noreferrer">
-    ارتباط با فروشنده در ایتا
+  <a href="https://eitaa.com/Premium_Saffron_qaenat" target="_blank" rel="noopener noreferrer">
+    گفت‌وگو با فروشنده در ایتا
   </a>
 </footer>
 
 <script>
+(() => {
   const EITAA_URL = "https://eitaa.com/Premium_Saffron_qaenat";
 
   const prices = {
-    dokhtar: 1190000,
-    sargol: 1490000
+    sargol: 1490000,
+    dokhtar: 1190000
   };
 
-  const productNames = {
-    dokhtar: "زعفران دسته دخترپیچ",
-    sargol: "زعفران سرگل"
+  const names = {
+    sargol: "زعفران سرگل",
+    dokhtar: "زعفران دسته دخترپیچ"
   };
 
-  const productSelect = document.getElementById("product");
-  const weightSelect = document.getElementById("weight");
-  const totalElement = document.getElementById("total");
-  const gramsElement = document.getElementById("grams");
+  const fmt = n => new Intl.NumberFormat("fa-IR").format(n);
+  const cart = [];
+
+  const product = document.getElementById("product");
+  const weight = document.getElementById("weight");
+  const quantity = document.getElementById("quantity");
+  const cartBox = document.getElementById("cart");
+  const totalBox = document.getElementById("total");
+  const weightBox = document.getElementById("totalWeight");
   const orderText = document.getElementById("orderText");
-  const statusElement = document.getElementById("status");
+  const status = document.getElementById("status");
+  const checkout = document.getElementById("checkoutBtn");
 
-  const formatNumber = number =>
-    new Intl.NumberFormat("fa-IR").format(number);
-
-  function getOrder() {
-    const product = productSelect.value;
-    const weight = Number(weightSelect.value);
-    const total = prices[product] * weight;
-    const grams = (weight * 4.608).toFixed(3);
-
-    return {
-      product,
-      weight,
-      total,
-      grams,
-      text:
-`سلام، برای خرید از فروشگاه زعفران قائنات (روستای دشت بیاض) سفارش دارم.
-
-محصول: ${productNames[product]}
-وزن: ${formatNumber(weight)} مثقال
-وزن تقریبی: ${formatNumber(Number(grams))} گرم
-مبلغ محصول: ${formatNumber(total)} تومان
-
-لطفاً موجودی، هزینه ارسال و نحوه پرداخت را اعلام کنید.
-نام و نشانی گیرنده را پس از هماهنگی ارسال می‌کنم.`
-    };
+  function totals() {
+    return cart.reduce((sum, item) => {
+      sum.price += prices[item.product] * item.weight * item.quantity;
+      sum.grams += 4.608 * item.weight * item.quantity;
+      return sum;
+    }, {price: 0, grams: 0});
   }
 
-  function updateOrder() {
-    const order = getOrder();
+  function makeMessage() {
+    if (!cart.length) return "";
 
-    totalElement.textContent =
-      formatNumber(order.total) + " تومان";
+    const t = totals();
 
-    gramsElement.textContent =
-      "وزن تقریبی: " + formatNumber(Number(order.grams)) + " گرم";
+    const rows = cart.map((item, i) => {
+      const linePrice = prices[item.product] * item.weight * item.quantity;
+      const lineGrams = 4.608 * item.weight * item.quantity;
 
-    orderText.value = order.text;
-    statusElement.textContent =
-      "قیمت و متن سفارش به‌روز شد.";
+      return `${fmt(i + 1)}. ${names[item.product]}
+وزن هر بسته: ${fmt(item.weight)} مثقال
+تعداد بسته: ${fmt(item.quantity)}
+وزن کل این ردیف: ${fmt(Number(lineGrams.toFixed(3)))} گرم
+قیمت این ردیف: ${fmt(linePrice)} تومان`;
+    });
+
+    return `سلام، وقتتون بخیر 🌹
+
+از فروشگاه زعفران قائنات (روستای دشت بیاض) سفارش دارم.
+
+${rows.join("\n\n")}
+
+مبلغ کل محصولات: ${fmt(t.price)} تومان
+وزن کل محصولات: ${fmt(Number(t.grams.toFixed(3)))} گرم
+
+لطفاً موجودی، هزینه ارسال و نحوه پرداخت را اعلام بفرمایید.
+ممنون از شما 🙏`;
   }
 
-  async function copyOrder() {
-    orderText.value = getOrder().text;
+  function render() {
+    cartBox.replaceChildren();
+
+    if (!cart.length) {
+      const empty = document.createElement("p");
+      empty.className = "muted";
+      empty.textContent = "هنوز محصولی انتخاب نشده است.";
+      cartBox.append(empty);
+    } else {
+      cart.forEach((item, index) => {
+        const row = document.createElement("div");
+        row.className = "cart-item";
+
+        const title = document.createElement("h3");
+        title.textContent = names[item.product];
+
+        const details = document.createElement("p");
+        details.textContent =
+          `${fmt(item.weight)} مثقال × ${fmt(item.quantity)} بسته`;
+
+        const price = document.createElement("strong");
+        price.textContent =
+          `${fmt(prices[item.product] * item.weight * item.quantity)} تومان`;
+
+        const remove = document.createElement("button");
+        remove.className = "danger";
+        remove.textContent = "حذف این ردیف";
+        remove.addEventListener("click", () => {
+          cart.splice(index, 1);
+          render();
+          status.textContent = "سبد خرید به‌روزرسانی شد.";
+        });
+
+        row.append(title, details, price, remove);
+        cartBox.append(row);
+      });
+    }
+
+    const t = totals();
+    totalBox.textContent = `${fmt(t.price)} تومان`;
+    weightBox.textContent =
+      `وزن کل: ${fmt(Number(t.grams.toFixed(3)))} گرم`;
+
+    orderText.value = makeMessage();
+    checkout.disabled = cart.length === 0;
+    checkout.style.opacity = cart.length ? "1" : ".55";
+  }
+
+  document.getElementById("addBtn").addEventListener("click", () => {
+    const p = product.value;
+    const w = Number(weight.value);
+    const q = Number(quantity.value);
+
+    const existing = cart.find(item =>
+      item.product === p && item.weight === w
+    );
+
+    if (existing) existing.quantity += q;
+    else cart.push({product: p, weight: w, quantity: q});
+
+    render();
+    status.textContent = "محصول به سبد خرید اضافه شد.";
+  });
+
+  async function copyMessage() {
+    if (!cart.length) {
+      status.textContent = "ابتدا محصولی به سبد خرید اضافه کنید.";
+      return false;
+    }
+
+    orderText.value = makeMessage();
 
     try {
       await navigator.clipboard.writeText(orderText.value);
-      statusElement.textContent =
+      status.textContent =
         "متن سفارش کپی شد؛ آن را در گفت‌وگوی ایتا جای‌گذاری و ارسال کنید.";
+      return true;
     } catch (error) {
       orderText.focus();
       orderText.select();
-      statusElement.textContent =
-        "متن را انتخاب کنید و کپی کنید؛ سپس آن را در ایتا جای‌گذاری کنید.";
+
+      try {
+        if (document.execCommand("copy")) {
+          status.textContent =
+            "متن سفارش کپی شد؛ آن را در گفت‌وگوی ایتا جای‌گذاری و ارسال کنید.";
+          return true;
+        }
+      } catch (e) {}
+
+      status.textContent =
+        "متن انتخاب شد؛ آن را کپی کنید و در گفت‌وگوی ایتا جای‌گذاری کنید.";
+      return false;
     }
   }
 
-  productSelect.addEventListener("change", updateOrder);
-  weightSelect.addEventListener("change", updateOrder);
+  document.getElementById("copyBtn").addEventListener("click", copyMessage);
 
-  document.getElementById("copyBtn").addEventListener("click", copyOrder);
+  checkout.addEventListener("click", async () => {
+    if (!cart.length) return;
 
-  document.getElementById("orderBtn").addEventListener("click", () => {
-    updateOrder();
-    copyOrder();
-    window.open(EITAA_URL, "_blank", "noopener,noreferrer");
-    statusElement.textContent =
-      "اگر متن کپی شد، آن را در گفت‌وگوی ایتا جای‌گذاری و ارسال کنید. اگر کپی نشد، از دکمه کپی متن سفارش استفاده کنید.";
+    // ابتدا لینک را در رویداد کلیک باز می‌کنیم تا احتمال مسدودشدن کمتر شود.
+    const tab = window.open(EITAA_URL, "_blank", "noopener,noreferrer");
+    await copyMessage();
+
+    if (!tab) {
+      status.textContent =
+        "اگر ایتا باز نشد، از لینک ایتا در پایین صفحه استفاده کنید. متن سفارش را نیز کپی و در گفت‌وگو ارسال کنید.";
+    } else {
+      status.textContent =
+        "ایتا باز شد. اگر متن خودکار داخل کادر پیام نبود، متن آماده را کپی و در گفت‌وگو جای‌گذاری کنید.";
+    }
   });
 
-  updateOrder();
+  render();
+})();
 </script>
-
 </body>
 </html>
