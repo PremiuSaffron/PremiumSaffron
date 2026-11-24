@@ -1,447 +1,316 @@
 
-<!doctype html>
+<!DOCTYPE html>
 <html lang="fa" dir="rtl">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-<meta name="theme-color" content="#54217d">
-<meta name="description" content="فروشگاه زعفران دشت‌بیاض قائنات؛ خرید زعفران دسته دخترپیچ و سرگل">
-<title>فروشگاه زعفران دشت‌بیاض قائنات</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#4b176b">
+<meta name="description" content="خرید زعفران دشت‌بیاض قائنات؛ زعفران دخترپیچ و سرگل در بسته‌بندی‌های متنوع">
+<title>زعفران دشت‌بیاض قائنات</title>
 
 <style>
-:root {
-  --p:#54217d;
-  --d:#35134f;
-  --g:#e8b949;
-  --bg:#fbf8fd;
-  --ink:#281b30;
-  --muted:#75697d;
-  --line:#e9dff0;
-}
-* { box-sizing:border-box; }
-html { scroll-behavior:smooth; }
-body {
+*{box-sizing:border-box}
+body{
   margin:0;
   font-family:Tahoma,Arial,sans-serif;
-  background:var(--bg);
-  color:var(--ink);
-  line-height:1.9;
+  background:#faf7fc;
+  color:#302239;
+  line-height:1.9
 }
-.wrap { max-width:1000px; margin:auto; padding:0 14px; }
-header {
-  background:linear-gradient(130deg,var(--d),var(--p));
+header{
+  background:linear-gradient(135deg,#40105e,#71379a);
   color:white;
-  padding:22px 0 30px;
-}
-.brand { font-size:21px; font-weight:bold; }
-.sub { font-size:13px; color:#f3dc9a; }
-.hero {
-  display:grid;
-  grid-template-columns:1fr auto;
-  gap:15px;
-  align-items:center;
-  margin-top:22px;
-}
-h1 { font-size:clamp(24px,5vw,36px); line-height:1.6; margin:0 0 8px; }
-.hero p { color:#f1e7f8; margin:0 0 15px; }
-.flower {
-  font-size:72px;
-  border:1px solid #ffffff35;
-  border-radius:22px;
-  padding:12px;
-}
-button,.btn {
-  border:0;
-  border-radius:12px;
-  background:var(--p);
-  color:white;
-  padding:10px 14px;
-  font:inherit;
-  font-weight:bold;
-  text-decoration:none;
-  cursor:pointer;
-  display:inline-block;
-}
-button:disabled { opacity:.45; cursor:not-allowed; }
-.gold { background:var(--g); color:#2d1835; }
-.light { background:#f1e7f8; color:var(--p); }
-main { padding:22px 0 40px; }
-.notice {
-  background:#fff6dc;
-  border:1px solid #f0d88c;
-  border-radius:12px;
-  padding:11px 13px;
-  font-size:13px;
-  margin-bottom:15px;
-}
-.heading {
-  display:flex;
-  justify-content:space-between;
-  align-items:center;
-  gap:8px;
-  flex-wrap:wrap;
-}
-h2 { font-size:21px; margin:12px 0; }
-.grid {
-  display:grid;
-  grid-template-columns:repeat(3,minmax(0,1fr));
-  gap:14px;
-}
-.card {
-  background:white;
-  border:1px solid var(--line);
-  border-radius:17px;
-  overflow:hidden;
-}
-.visual {
-  height:115px;
-  display:grid;
-  place-items:center;
-  background:linear-gradient(135deg,#fff0cc,#f2e4f8);
-  font-size:52px;
-}
-.body { padding:13px; }
-.body h3 { margin:0; font-size:16px; }
-.desc { font-size:12px; color:var(--muted); }
-.price {
-  font-size:17px;
-  font-weight:bold;
-  color:var(--p);
-  margin:8px 0;
-}
-.controls {
-  display:flex;
-  gap:8px;
-  align-items:center;
-  margin:9px 0 2px;
-}
-.controls button { padding:5px 11px; }
-.qty { min-width:22px; text-align:center; }
-.panel {
-  margin:18px 0;
-  background:white;
-  border:1px solid var(--line);
-  border-radius:17px;
-  padding:15px;
-}
-input,textarea {
-  width:100%;
-  padding:11px;
-  border:1px solid #d9cce1;
-  border-radius:10px;
-  font:inherit;
-  margin:4px 0 10px;
-  background:white;
-}
-label { font-size:13px; font-weight:bold; }
-.formgrid {
-  display:grid;
-  grid-template-columns:1fr 1fr;
-  gap:8px;
-}
-.line {
-  display:flex;
-  justify-content:space-between;
-  gap:10px;
-  border-bottom:1px solid var(--line);
-  padding:9px 0;
-}
-.total { font-size:18px; font-weight:bold; color:var(--p); }
-.small { font-size:12px; color:var(--muted); }
-footer {
   text-align:center;
-  padding:22px 12px;
-  background:#f1e8f7;
-  color:var(--muted);
-  font-size:13px;
+  padding:32px 15px
 }
-@media(max-width:650px) {
-  .grid { grid-template-columns:repeat(2,minmax(0,1fr)); }
-  .hero { grid-template-columns:1fr; }
-  .flower { display:none; }
+header h1{margin:0;font-size:25px}
+header p{margin:8px 0 0;color:#f3dca0}
+.container{max-width:950px;margin:auto;padding:18px}
+.intro{
+  background:white;border-radius:16px;padding:20px;
+  text-align:center;box-shadow:0 3px 15px #0000000b;
+  margin-bottom:20px
 }
-@media(max-width:410px) {
-  .grid { grid-template-columns:1fr; }
-  .visual { height:100px; }
-  .formgrid { grid-template-columns:1fr; }
+h2{color:#572274;font-size:21px}
+.products{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+  gap:18px
+}
+.card{
+  background:white;border:1px solid #eee3f3;
+  border-radius:18px;overflow:hidden;
+  box-shadow:0 4px 15px #0000000b
+}
+.product-image{
+  width:100%;height:185px;object-fit:cover;
+  background:#f0e6f4;display:block
+}
+.image-placeholder{
+  height:185px;background:linear-gradient(135deg,#f5e9c9,#d9c0e8);
+  display:flex;align-items:center;justify-content:center;
+  font-size:54px
+}
+.card-content{padding:17px}
+.card h3{margin:0 0 8px;color:#572274}
+.price{font-weight:bold;color:#946400}
+select,input,textarea{
+  width:100%;padding:12px;margin:7px 0;
+  border:1px solid #ddd0e8;border-radius:9px;
+  font-family:inherit;font-size:14px;background:white
+}
+button,.button{
+  border:0;border-radius:10px;padding:12px 15px;
+  cursor:pointer;font-family:inherit;font-size:14px;
+  text-decoration:none;display:inline-block;text-align:center
+}
+.add{background:#5a2478;color:white;width:100%;margin-top:8px}
+.remove{background:#f5e7e7;color:#842525}
+.cart,.checkout{
+  background:white;border-radius:16px;padding:20px;
+  margin-top:22px;border:1px solid #eee3f3
+}
+.cart-item{
+  display:flex;justify-content:space-between;align-items:center;
+  gap:10px;padding:10px 0;border-bottom:1px solid #eee
+}
+.cart-item button{padding:5px 10px;margin:2px}
+.total{font-size:20px;font-weight:bold;color:#572274}
+.submit{
+  width:100%;background:#14804a;color:white;
+  font-size:16px;margin-top:12px
+}
+.note{font-size:13px;color:#716778}
+footer{
+  text-align:center;background:#351047;color:white;
+  padding:22px;margin-top:30px;font-size:13px
 }
 </style>
 </head>
 
 <body>
 <header>
-  <div class="wrap">
-    <div class="brand">🌺 زعفران دشت‌بیاض قائنات</div>
-    <div class="sub">فروش مستقیم • بسته‌های ۱، ۲، ۳ و ۵ مثقالی</div>
-
-    <div class="hero">
-      <div>
-        <h1>عطر زعفران اصیل دشت‌بیاض، به خانه شما</h1>
-        <p>محصول موردنظرتان را انتخاب کنید، قیمت را ببینید و سفارش خود را در ایتا برای فروشنده بفرستید.</p>
-        <button class="gold" onclick="document.getElementById('products').scrollIntoView({behavior:'smooth'})">
-          مشاهده محصولات ↓
-        </button>
-      </div>
-      <div class="flower">🌸</div>
-    </div>
-  </div>
+  <h1>زعفران دشت‌بیاض قائنات</h1>
+  <p>عطر و رنگ اصیل زعفران خراسان جنوبی</p>
 </header>
 
-<main class="wrap">
-  <div class="notice">
-    قیمت‌ها به تومان هستند. هزینه ارسال جداگانه هماهنگ می‌شود.
-    ثبت سفارش در این سایت به معنی پرداخت آنلاین نیست؛ سفارش پس از تأیید فروشنده نهایی خواهد شد.
-  </div>
-
-  <div class="heading">
-    <h2 id="products">محصولات ما</h2>
-    <span class="small">هر مثقال ≈ ۴٫۶۰۸ گرم</span>
-  </div>
-
-  <div id="productGrid" class="grid"></div>
-
-  <section class="panel" id="cart">
-    <h2>🛒 سبد خرید</h2>
-    <div id="cartLines"><p class="small">هنوز محصولی انتخاب نشده است.</p></div>
-    <div class="line">
-      <span>جمع کالاها</span>
-      <span id="total" class="total">۰ تومان</span>
-    </div>
+<main class="container">
+  <section class="intro">
+    <h2>به فروشگاه ما خوش آمدید 🌺</h2>
+    <p>
+      زعفران دشت‌بیاض قائنات را در دو نوع دخترپیچ و سرگل
+      و در بسته‌بندی‌های ۱، ۲، ۳ و ۵ مثقال سفارش دهید.
+    </p>
+    <p class="note">قیمت‌ها به تومان هستند. هزینه ارسال هنگام هماهنگی سفارش مشخص می‌شود.</p>
   </section>
 
-  <section class="panel">
-    <h2>مشخصات خریدار</h2>
+  <h2>محصولات ما</h2>
+  <section class="products" id="products"></section>
 
-    <form id="checkout">
-      <div class="formgrid">
-        <div>
-          <label for="name">نام و نام خانوادگی *</label>
-          <input id="name" required autocomplete="name" placeholder="نام خریدار">
-        </div>
-        <div>
-          <label for="phone">شماره تماس *</label>
-          <input id="phone" required inputmode="tel" autocomplete="tel" placeholder="شماره تماس">
-        </div>
-        <div>
-          <label for="city">شهر و استان</label>
-          <input id="city" autocomplete="address-level2" placeholder="شهر محل تحویل">
-        </div>
-        <div>
-          <label for="address">نشانی پستی</label>
-          <input id="address" autocomplete="street-address" placeholder="نشانی کامل">
-        </div>
-      </div>
+  <section class="cart">
+    <h2>🛒 سبد خرید شما</h2>
+    <div id="cartItems">هنوز محصولی انتخاب نکرده‌اید.</div>
+    <p class="total">مجموع: <span id="total">۰</span> تومان</p>
+  </section>
 
-      <label for="note">توضیحات سفارش</label>
-      <textarea id="note" rows="2" placeholder="توضیحات دلخواه"></textarea>
+  <section class="checkout">
+    <h2>اطلاعات سفارش</h2>
+    <p class="note">پس از تکمیل اطلاعات، متن سفارش ساخته می‌شود تا آن را در ایتا ارسال کنید.</p>
 
-      <button class="gold" type="submit">آماده‌کردن سفارش در ایتا</button>
+    <form id="orderForm">
+      <input id="customerName" placeholder="نام و نام خانوادگی" required>
+      <input id="phone" type="tel" placeholder="شماره تماس" required>
+      <input id="city" placeholder="شهر محل دریافت سفارش" required>
+      <textarea id="address" rows="3" placeholder="نشانی کامل پستی" required></textarea>
+      <textarea id="notes" rows="2" placeholder="توضیحات تکمیلی (اختیاری)"></textarea>
+      <button class="submit" type="submit">ساخت متن سفارش و ارسال به ایتا</button>
     </form>
 
-    <div id="result" class="notice" hidden></div>
-    <p class="small">
-      پس از آماده‌شدن سفارش، متن را کپی کنید و در گفت‌وگوی ایتا برای فروشنده بفرستید.
-    </p>
-  </section>
-
-  <section class="panel">
-    <h2>تماس با فروشنده</h2>
-    <p>برای استعلام موجودی، هزینه ارسال و هماهنگی خرید عمده پیام بدهید.</p>
-    <a class="btn" href="https://eitaa.com/Premium_Saffron_qaenat" target="_blank" rel="noopener">
-      گفت‌وگو با فروشنده در ایتا
-    </a>
+    <div id="result" hidden>
+      <p>متن سفارش آماده است. آن را کپی کنید و در گفت‌وگوی ایتا ارسال کنید.</p>
+      <textarea id="orderText" rows="10" readonly></textarea>
+      <button class="add" type="button" id="copyBtn">کپی متن سفارش</button>
+      <a class="button submit" href="https://eitaa.com/Premium_Saffron_qaenat" target="_blank" rel="noopener">باز کردن حساب ایتا</a>
+    </div>
   </section>
 </main>
 
-<footer>زعفران دشت‌بیاض قائنات • فروشگاه اینترنتی</footer>
+<footer>
+  <strong>زعفران دشت‌بیاض قائنات</strong>
+  <p>کیفیت اصیل خراسان جنوبی 🌷</p>
+  <p>سفارش و هماهنگی از طریق ایتا</p>
+</footer>
 
 <script>
-"use strict";
+const EITAA_URL = "https://eitaa.com/Premium_Saffron_qaenat";
 
-/* تنظیمات فروشگاه */
-const EITAA_ORDER_URL = "https://eitaa.com/Premium_Saffron_qaenat";
-
-/* قیمت قطعی هر مثقال، بر اساس تأیید فروشنده */
-const TYPES = [
-  {
-    id:"dokhtar",
-    name:"زعفران دسته دخترپیچ",
-    perMithqal:1190000,
-    emoji:"🌺",
-    description:"زعفران دسته دخترپیچ دشت‌بیاض"
-  },
-  {
-    id:"sargol",
-    name:"زعفران سرگل",
-    perMithqal:1490000,
-    emoji:"🌷",
-    description:"زعفران سرگل دشت‌بیاض"
-  }
+const products = [
+  {id:1,name:"زعفران دسته دخترپیچ",weight:1,price:1190000},
+  {id:2,name:"زعفران دسته دخترپیچ",weight:2,price:2380000},
+  {id:3,name:"زعفران دسته دخترپیچ",weight:3,price:3570000},
+  {id:4,name:"زعفران دسته دخترپیچ",weight:5,price:5950000},
+  {id:5,name:"زعفران سرگل",weight:1,price:1490000},
+  {id:6,name:"زعفران سرگل",weight:2,price:2980000},
+  {id:7,name:"زعفران سرگل",weight:3,price:4470000},
+  {id:8,name:"زعفران سرگل",weight:5,price:7450000}
 ];
-
-const WEIGHTS = [1,2,3,5];
-
-const PRODUCTS = TYPES.flatMap(type =>
-  WEIGHTS.map(weight => ({
-    id:type.id+"-"+weight,
-    name:type.name,
-    weight:weight,
-    price:type.perMithqal*weight,
-    emoji:type.emoji,
-    description:type.description
-  }))
-);
 
 const cart = {};
 
-const fmt = number =>
-  new Intl.NumberFormat("fa-IR").format(Number(number)||0);
+function money(n){
+  return new Intl.NumberFormat("fa-IR").format(n);
+}
 
-const money = number => fmt(number)+" تومان";
+function renderProducts(){
+  const container = document.getElementById("products");
+  const groups = [
+    {
+      title:"زعفران دسته دخترپیچ",
+      description:"عطر اصیل زعفران خراسان جنوبی",
+      icon:"🌺",
+      items:products.filter(p=>p.name.includes("دخترپیچ"))
+    },
+    {
+      title:"زعفران سرگل",
+      description:"زعفران سرگل خوش‌رنگ و خوش‌عطر",
+      icon:"🌷",
+      items:products.filter(p=>p.name.includes("سرگل"))
+    }
+  ];
 
-const esc = value => String(value ?? "").replace(/[&<>"']/g, char => ({
-  "&":"&amp;",
-  "<":"&lt;",
-  ">":"&gt;",
-  '"':"&quot;",
-  "'":"&#39;"
-}[char]));
-
-function renderProducts() {
-  document.getElementById("productGrid").innerHTML = PRODUCTS.map(product => `
+  container.innerHTML = groups.map((g,index)=>`
     <article class="card">
-      <div class="visual">${esc(product.emoji)}</div>
-      <div class="body">
-        <h3>${esc(product.name)}</h3>
-        <div class="small">
-          بسته ${fmt(product.weight)} مثقالی
-          • حدود ${fmt(product.weight*4.608)} گرم
-        </div>
-        <div class="desc">${esc(product.description)}</div>
-        <div class="price">${money(product.price)}</div>
-        <div class="controls">
-          <button type="button" class="light"
-            aria-label="کاهش تعداد"
-            onclick="changeQty('${product.id}',-1)">−</button>
-          <span class="qty">${fmt(cart[product.id]||0)}</span>
-          <button type="button"
-            onclick="changeQty('${product.id}',1)">افزودن +</button>
-        </div>
+      <div class="image-placeholder" aria-label="${g.title}">${g.icon}</div>
+      <div class="card-content">
+        <h3>${g.title}</h3>
+        <p>${g.description}</p>
+        <p class="note">قیمت هر مثقال:
+          <span class="price">${money(index===0?1190000:1490000)}</span> تومان
+        </p>
+        <label for="weight${index}">انتخاب بسته‌بندی</label>
+        <select id="weight${index}">
+          ${g.items.map(p=>`
+            <option value="${p.id}">
+              ${money(p.weight)} مثقال — ${money(p.price)} تومان
+            </option>
+          `).join("")}
+        </select>
+        <button class="add" type="button" onclick="addProduct(${index})">
+          افزودن به سبد خرید
+        </button>
       </div>
     </article>
   `).join("");
 }
 
-function changeQty(id, delta) {
-  const product = PRODUCTS.find(item => item.id === id);
-  if (!product) return;
-
-  cart[id] = Math.max(0,(cart[id]||0)+delta);
-
-  renderProducts();
+function addProduct(groupIndex){
+  const select=document.getElementById("weight"+groupIndex);
+  const id=Number(select.value);
+  cart[id]=(cart[id]||0)+1;
   renderCart();
 }
 
-function renderCart() {
-  const items = PRODUCTS.filter(product => (cart[product.id]||0)>0);
-
-  const total = items.reduce(
-    (sum,product) => sum+product.price*cart[product.id],
-    0
-  );
-
-  document.getElementById("cartLines").innerHTML =
-    items.map(product => `
-      <div class="line">
-        <span>
-          ${esc(product.name)}
-          (${fmt(product.weight)} مثقال) × ${fmt(cart[product.id])}
-        </span>
-        <strong>${money(product.price*cart[product.id])}</strong>
-      </div>
-    `).join("") || '<p class="small">هنوز محصولی انتخاب نشده است.</p>';
-
-  document.getElementById("total").textContent = money(total);
+function changeQty(id,delta){
+  cart[id]=(cart[id]||0)+delta;
+  if(cart[id]<=0) delete cart[id];
+  renderCart();
 }
 
-document.getElementById("checkout").addEventListener("submit", async event => {
-  event.preventDefault();
+function renderCart(){
+  const box=document.getElementById("cartItems");
+  const ids=Object.keys(cart);
+  let total=0;
 
-  const items = PRODUCTS.filter(product => (cart[product.id]||0)>0);
-
-  if (!items.length) {
-    alert("ابتدا محصولی به سبد خرید اضافه کنید.");
+  if(ids.length===0){
+    box.textContent="هنوز محصولی انتخاب نکرده‌اید.";
+    document.getElementById("total").textContent="۰";
     return;
   }
 
-  const total = items.reduce(
-    (sum,product) => sum+product.price*cart[product.id],
-    0
-  );
+  box.innerHTML=ids.map(id=>{
+    const p=products.find(x=>x.id===Number(id));
+    const subtotal=p.price*cart[id];
+    total+=subtotal;
+    return `
+      <div class="cart-item">
+        <div>
+          <strong>${p.name}</strong><br>
+          ${money(p.weight)} مثقال × ${money(cart[id])}<br>
+          <span class="price">${money(subtotal)} تومان</span>
+        </div>
+        <div>
+          <button type="button" class="add" onclick="changeQty(${p.id},1)">+</button>
+          <button type="button" class="remove" onclick="changeQty(${p.id},-1)">−</button>
+        </div>
+      </div>
+    `;
+  }).join("");
 
-  const message = [
-    "سلام، برای خرید زعفران دشت‌بیاض قائنات سفارش دارم.",
-    "",
-    ...items.map(product =>
-      `- ${product.name}، بسته ${fmt(product.weight)} مثقالی، تعداد ${fmt(cart[product.id])}، مبلغ ${money(product.price*cart[product.id])}`
-    ),
-    "",
-    `جمع کالاها: ${money(total)}`,
-    `نام و نام خانوادگی: ${document.getElementById("name").value.trim()}`,
-    `شماره تماس: ${document.getElementById("phone").value.trim()}`,
-    `شهر و استان: ${document.getElementById("city").value.trim()}`,
-    `نشانی: ${document.getElementById("address").value.trim()}`,
-    `توضیحات: ${document.getElementById("note").value.trim()}`,
-    "",
-    "لطفاً موجودی، هزینه ارسال و مبلغ نهایی را تأیید کنید."
-  ].join("\n");
+  document.getElementById("total").textContent=money(total);
+}
 
-  const result = document.getElementById("result");
-  result.hidden = false;
-  result.innerHTML = `
-    <strong>متن سفارش آماده است.</strong>
-    <textarea id="orderText" rows="10" readonly aria-label="متن سفارش"></textarea>
-    <div class="controls">
-      <button type="button" onclick="copyOrder()">کپی متن سفارش</button>
-      <button type="button" class="light" onclick="openEitaa()">بازکردن ایتا</button>
-    </div>
-    <p class="small">
-      اگر ایتا مستقیماً گفت‌وگوی فروشنده را باز نکرد، از لینک تماس پایین صفحه استفاده کنید.
-    </p>
-  `;
+document.getElementById("orderForm").addEventListener("submit",function(e){
+  e.preventDefault();
 
-  document.getElementById("orderText").value = message;
+  const ids=Object.keys(cart);
+  if(ids.length===0){
+    alert("لطفاً ابتدا محصولی به سبد خرید اضافه کنید.");
+    return;
+  }
 
-  try {
-    await navigator.clipboard.writeText(message);
-    result.querySelector("strong").textContent =
-      "متن سفارش آماده و کپی شد؛ حالا ایتا را باز کنید.";
-  } catch (error) {
-    const textArea = document.getElementById("orderText");
-    textArea.focus();
-    textArea.select();
+  const name=document.getElementById("customerName").value.trim();
+  const phone=document.getElementById("phone").value.trim();
+  const city=document.getElementById("city").value.trim();
+  const address=document.getElementById("address").value.trim();
+  const notes=document.getElementById("notes").value.trim();
+
+  let total=0;
+  let lines=[];
+
+  ids.forEach(id=>{
+    const p=products.find(x=>x.id===Number(id));
+    const subtotal=p.price*cart[id];
+    total+=subtotal;
+    lines.push(`- ${p.name}، ${money(p.weight)} مثقال، تعداد ${money(cart[id])} بسته: ${money(subtotal)} تومان`);
+  });
+
+  const message=
+`سلام، برای زعفران دشت‌بیاض قائنات سفارش دارم.
+
+نام: ${name}
+شماره تماس: ${phone}
+شهر: ${city}
+نشانی: ${address}
+
+محصولات:
+${lines.join("\n")}
+
+مجموع مبلغ محصولات: ${money(total)} تومان
+هزینه ارسال: نیازمند هماهنگی
+
+توضیحات: ${notes||"ندارد"}
+
+لطفاً برای تأیید سفارش و هماهنگی ارسال راهنمایی کنید.`;
+
+  document.getElementById("orderText").value=message;
+  document.getElementById("result").hidden=false;
+  document.getElementById("result").scrollIntoView({behavior:"smooth"});
+});
+
+document.getElementById("copyBtn").addEventListener("click",async function(){
+  const text=document.getElementById("orderText").value;
+  try{
+    await navigator.clipboard.writeText(text);
+    alert("متن سفارش کپی شد. حالا ایتا را باز کنید و آن را ارسال کنید.");
+  }catch(error){
+    const field=document.getElementById("orderText");
+    field.focus();
+    field.select();
+    alert("متن انتخاب شد؛ گزینه کپی گوشی را بزنید.");
   }
 });
 
-async function copyOrder() {
-  const textArea = document.getElementById("orderText");
-
-  try {
-    await navigator.clipboard.writeText(textArea.value);
-    alert("متن سفارش کپی شد.");
-  } catch (error) {
-    textArea.focus();
-    textArea.select();
-    alert("متن انتخاب شد؛ گزینه کپی گوشی را بزنید.");
-  }
-}
-
-function openEitaa() {
-  window.open(EITAA_ORDER_URL,"_blank","noopener");
-}
-
 renderProducts();
-renderCart();
 </script>
 </body>
 </html>
